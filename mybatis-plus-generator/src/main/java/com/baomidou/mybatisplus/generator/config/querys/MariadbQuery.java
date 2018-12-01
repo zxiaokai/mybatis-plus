@@ -84,6 +84,11 @@ public class MariadbQuery extends AbstractDbQuery {
         return "KEY";
     }
 
+    @Override
+    public String fieldNotNull() {
+        //需完善
+        return null;
+    }
 
     @Override
     public boolean isKeyIdentity(ResultSet results) throws SQLException {

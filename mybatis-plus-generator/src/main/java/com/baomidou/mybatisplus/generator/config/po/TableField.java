@@ -45,6 +45,7 @@ public class TableField {
     private IColumnType columnType;
     private String comment;
     private String fill;
+    private boolean notNull;
     /**
      * 自定义查询字段列表
      */
@@ -114,6 +115,14 @@ public class TableField {
         return propertyName;
     }
 
+    public boolean isNotNull() {
+        return notNull;
+    }
+
+    public void setNotNull(boolean notNull) {
+        this.notNull = notNull;
+    }
+
     public void setPropertyName(StrategyConfig strategyConfig, String propertyName) {
         this.propertyName = propertyName;
         this.setConvert(strategyConfig);
@@ -141,6 +150,7 @@ public class TableField {
     public void setComment(String comment) {
         this.comment = comment;
     }
+
 
     /**
      * 按JavaBean规则来生成get和set方法

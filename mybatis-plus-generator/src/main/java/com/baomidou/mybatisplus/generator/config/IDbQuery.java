@@ -84,6 +84,11 @@ public interface IDbQuery {
      */
     String fieldKey();
 
+    /**
+     * 字段是否不可为空
+     */
+    String fieldNotNull();
+
 
     /**
      * <p>
@@ -101,4 +106,5 @@ public interface IDbQuery {
      * 自定义字段名称
      */
     String[] fieldCustom();
+
 }

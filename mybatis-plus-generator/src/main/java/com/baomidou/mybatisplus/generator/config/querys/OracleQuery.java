@@ -90,4 +90,9 @@ public class OracleQuery extends AbstractDbQuery {
         return "KEY";
     }
 
+    @Override
+    public String fieldNotNull() {
+        //需完善
+        return null;
+    }
 }

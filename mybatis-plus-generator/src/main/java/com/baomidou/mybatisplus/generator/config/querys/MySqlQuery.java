@@ -84,6 +84,10 @@ public class MySqlQuery extends AbstractDbQuery {
         return "KEY";
     }
 
+    @Override
+    public String fieldNotNull() {
+        return "NULL";
+    }
 
     @Override
     public boolean isKeyIdentity(ResultSet results) throws SQLException {

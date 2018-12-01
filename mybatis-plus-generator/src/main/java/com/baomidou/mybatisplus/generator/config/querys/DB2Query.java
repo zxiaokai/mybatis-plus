@@ -81,4 +81,9 @@ public class DB2Query extends AbstractDbQuery {
         return "IDENTITY";
     }
 
+    @Override
+    public String fieldNotNull() {
+        //需完善
+        return null;
+    }
 }
